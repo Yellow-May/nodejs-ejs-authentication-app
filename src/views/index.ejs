@@ -1,0 +1,16 @@
+<% if (user) { %>
+<h1 class="mb-5">Welcome <%= user.username %></h1>
+<p class="lead">
+	<a href="/logout" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Logout</a>
+</p>
+<% } else { %>
+<h1>Home</h1>
+<p class="lead mb-5">
+	Home page of the yellow-may's login/signup authentication application, using nodejs, expressjs,
+	ejs templating engine, bootstrap and more.
+</p>
+<p class="lead">
+	<a href="/login" class="btn btn-lg btn-link fw-bold text-white">Login</a>
+	<a href="/signup" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Sign Up</a>
+</p>
+<% } %>
